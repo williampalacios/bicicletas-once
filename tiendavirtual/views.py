@@ -10,7 +10,7 @@ def index(request):
     num_proveedores=Proveedores.objects.all().count()
     num_productos=Productos.objects.filter(demanda__exact='m').count()
     num_mensajeros=Companiasdeenvios.objects.count()
-    Prod1=Productos.objects.get(pk=1)
+    Prod1=Productos.objects.get(pk=2)
     imProd1=Prod1.imagentest.url
     # Renderiza la plantilla HTML index.html con los datos en la variable contexto
     return render(
