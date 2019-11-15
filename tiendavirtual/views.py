@@ -27,6 +27,7 @@ class ProductListView(generic.ListView):
 class ProductDetailView(generic.DetailView):
     model = Productos
 
+#comentario de prueba
 """def product_detail_view(request,pk):
     try:
         prod_id=Productos.objects.get(pk=pk)
