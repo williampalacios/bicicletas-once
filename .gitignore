@@ -8,3 +8,4 @@ db.sqlite3
 bicicletasonce/media
 /media
 bicicletasonce/settings.py
+bicicletasonce/__init__.py
