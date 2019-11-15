@@ -10,13 +10,13 @@ def index(request):
     num_proveedores=Proveedores.objects.all().count()
     num_productos=Productos.objects.filter(demanda__exact='m').count()
     num_mensajeros=Companiasdeenvios.objects.count()
-    Prod1=Productos.objects.get(pk=2)
-    imProd1=Prod1.imagentest.url
+    #Prod1=Productos.objects.get(pk=2)
+    #imProd1=Prod1.imagentest.url
     # Renderiza la plantilla HTML index.html con los datos en la variable contexto
     return render(
         request,
         'index.html',
-        context={'num_clientes':num_clientes,'num_proveedores':num_proveedores,'num_productos':num_productos,'num_mensajeros':num_mensajeros,'imProd1':imProd1},
+        context={'num_clientes':num_clientes,'num_proveedores':num_proveedores,'num_productos':num_productos,'num_mensajeros':num_mensajeros},#,'imProd1':imProd1},
     )
 
 from django.views import generic
