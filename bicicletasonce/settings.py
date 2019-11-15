@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'bicicletasonce.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -87,7 +87,16 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bicicletasonce$bicicletasOnce',
+        'USER': 'bicicletasonce',
+        'PASSWORD': 'rootroot',
+        'HOST': 'bicicletasonce.mysql.pythonanywhere-services.com',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
