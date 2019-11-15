@@ -7,3 +7,4 @@ db.sqlite3
 .DS_Store
 bicicletasonce/media
 /media
+bicicletasonce/settings.py
